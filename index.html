@@ -65,6 +65,42 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-判断是否为彩色图像" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/判断是否为彩色图像/" class="article-date">
+  <time datetime="2019-02-25T13:45:43.999Z" itemprop="datePublished">2019-02-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/判断是否为彩色图像/">确定图像是否为彩色或灰度图像(MATLAB)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">image = imread(<span class="string">'hello_world.jpg'</span>);</span><br><span class="line">image_size=<span class="built_in">size</span>(image);</span><br><span class="line">dimension=<span class="built_in">numel</span>(image_size);</span><br><span class="line"><span class="keyword">if</span> dimension==<span class="number">2</span></span><br><span class="line">    fprintf(<span class="string">'%s'</span>,<span class="string">'灰度图像'</span>);</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="keyword">if</span> dimension==<span class="number">3</span></span><br><span class="line">    fprintf(<span class="string">'%s'</span>,<span class="string">'彩色图像'</span>);</span><br><span class="line"><span class="keyword">end</span> </span><br><span class="line"> fprintf(<span class="string">'%d'</span>,dimension);</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/判断是否为彩色图像/" data-id="cjskeeput0000ugvhoradhdu8" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-计算最大公因数" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/计算最大公因数/" class="article-date">
@@ -87,8 +123,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#计算最大公因数<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">gcd</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> g = y;</span><br><span class="line">	<span class="keyword">while</span>(x &gt; <span class="number">0</span>)&#123;</span><br><span class="line">		g = x;</span><br><span class="line">		x = y % x;</span><br><span class="line">		y = g;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> g;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-
+        <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">gcd</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> g = y;</span><br><span class="line">	<span class="keyword">while</span>(x &gt; <span class="number">0</span>)&#123;</span><br><span class="line">		g = x;</span><br><span class="line">		x = y % x;</span><br><span class="line">		y = g;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> g;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
@@ -237,6 +272,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/判断是否为彩色图像/">确定图像是否为彩色或灰度图像(MATLAB)</a>
+          </li>
         
           <li>
             <a href="/计算最大公因数/">计算最大公因数(C)</a>
